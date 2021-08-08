@@ -1,3 +1,3 @@
 <?php
-echo "heroku deployment w/ github asdas22";
+echo "heroku deployment w/ github deneme";
 ?>
