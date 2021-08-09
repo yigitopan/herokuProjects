@@ -7,5 +7,5 @@ foreach ($obj as $key => $value){
     echo "title $titleId :".$out ."<br/>";
     $titleId++;
 }
-echo "son deneme";
+echo "deneme";
 ?>
