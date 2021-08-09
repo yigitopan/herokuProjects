@@ -1,10 +1,12 @@
 <?php
 
-$url = "https://reqres.in/api/users";
+$url = "https://jsonplaceholder.typicode.com/posts";
 
 $data_array = array(
-    'name' => 'John Doe',
-    'job' => 'Web Devel4oper'
+    'userId' => 'John Doe',
+    'id' => 'Web Devel4oper',
+    'title' => 'Web Devel4oper',
+    'body' => 'Web Devel4oper',
 );
 
 $data = http_build_query($data_array);
