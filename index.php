@@ -4,7 +4,7 @@ $url = "https://reqres.in/api/users";
 
 $data_array = array(
     'name' => 'John Doe',
-    'job' => 'Web Developer'
+    'job' => 'Web Devel4oper'
 );
 
 $data = http_build_query($data_array);
