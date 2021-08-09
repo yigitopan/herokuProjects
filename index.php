@@ -28,7 +28,7 @@ if($e = curl_error($ch))
 
 
 $data = file_get_contents('https://jsonplaceholder.typicode.com/posts');
-$json_arr = json_decode($data, true);
+$json_arr = json_decode($resp);
 $titleId = 0;
 foreach ($json_arr as $key => $value){
     $out=$value["title"];
