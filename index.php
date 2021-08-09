@@ -3,8 +3,8 @@
 $url = "https://jsonplaceholder.typicode.com/posts";
 
 $data_array = array(
-    'userId' => 'John Doe',
-    'id' => 'Web Devel4oper',
+    'userId' => 201,
+    'id' => 999,
     'title' => 'Web Devel4oper',
     'body' => 'Web Devel4oper',
 );
