@@ -7,7 +7,7 @@ $ch = curl_init($url);
 // Setup request to send json via POST
 $data2 = array(
     'userId' => 'codexworld',
-    'id' => '123456',
+    'id' => 123456,
     'title' => '123456',
     'body' => '1233456'
 );
