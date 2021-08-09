@@ -1,3 +1,5 @@
 <?php
-echo "heroku deployment w/ github deneme";
+$json = file_get_contents('http://localhost:3000/');
+$obj = json_decode($json);
+echo $obj->posts;
 ?>
