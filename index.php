@@ -5,7 +5,7 @@ $url = 'https://jsonplaceholder.typicode.com/posts';
 $data_array = array(
     'userId' => 102,
     'id' => 123456,
-    'title' => '123456',
+    'title' => '1235456',
     'body' => '1233456'
 );
 $data1 = http_build_query($data_array);
