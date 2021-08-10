@@ -53,7 +53,7 @@ else {
     $decoded = json_decode($resp);
     foreach ($decoded as $key => $jsons) { // This will search in the 2 jsons
         foreach($jsons as $key => $value) {
-            echo $value."<br>"; // This will show jsut the value f each key like "var1" will print 9
+            echo $value["userId"]."<br>"; // This will show jsut the value f each key like "var1" will print 9
             // And then goes print 16,16,8 ...
         }
     }}
