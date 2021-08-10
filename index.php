@@ -1,11 +1,13 @@
 <?php
-
+/*
+                *** POST BASLANGIC
+ *
 $url = "https://jsonplaceholder.typicode.com/posts";
 
 $data_array = array(
     'userId' => 201,
     'id' => 999,
-    'title' => 'Web Devel4oper',
+    'title' => 'Web Devel42oper',
     'body' => 'Web Devel4oper',
 );
 
@@ -29,4 +31,7 @@ else {
         echo $key . ': '. $val . '<br>';
     }
 }
+
+                    *** POST BITIS */
+
 ?>
