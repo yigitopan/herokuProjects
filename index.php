@@ -1,14 +1,14 @@
 <?php
 
- /*               //*** POST BASLANGIC
+/*               //*** POST BASLANGIC
 
 $url = "https://jsonplaceholder.typicode.com/posts";
 
 $data_array = array(
-    'userId' => 201,
-    'id' => 999,
-    'title' => 'Web Devel42oper',
-    'body' => 'Web Devel4oper',
+   'userId' => 201,
+   'id' => 999,
+   'title' => 'Web Devel42oper',
+   'body' => 'Web Devel4oper',
 );
 
 $data = http_build_query($data_array);
@@ -23,19 +23,19 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $resp = curl_exec($ch);
 
 if($e = curl_error($ch)){
-    echo "hata: ".$e;
+   echo "hata: ".$e;
 }
 else {
-    $decoded = json_decode($resp);
-    foreach ($decoded as $key => $val){
-        echo $key . ': '. $val . '<br>';
-    }
+   $decoded = json_decode($resp);
+   foreach ($decoded as $key => $val){
+       echo $key . ': '. $val . '<br>';
+   }
 }
 
-                POST BITISS*/
+               POST BITISS*/
 
-        /* GET START
-        GET BITIS */
+/* GET START
+GET BITIS */
 
 $ch = curl_init();
 
@@ -50,10 +50,16 @@ if($e = curl_error($ch)){
     echo $e;
 }
 else {
-    $decoded = json_decode($resp);
-    foreach ($decoded as $key => $val){
-        echo $key . ': '. $val . '<br>';
+    try {
+        $decoded = json_decode($resp);
+        foreach ($decoded as $key => $val){
+            echo $key . ': '. $val . '<br>';
+        }
     }
+    catch (Exception $e) {
+        echo 'Yakaldanan: ',  $e->getMessage(), "\n";
+    }
+
 }
 
 ?>
