@@ -59,8 +59,8 @@ $url = "https://jsonplaceholder.typicode.com/posts/1";
 $data_array = array(
     'userId' => 201,
     'id' => 999,
-    'title' => 'Web Devel42oper',
-    'body' => 'Web Devel4oper',
+    'title' => 'Put Erprobung',
+    'body' => 'Put Test yigit',
 );
 
 $data = http_build_query($data_array);
