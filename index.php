@@ -90,21 +90,10 @@ else {
 //----------------------------------------------------------------------------------
 
 $url = "https://jsonplaceholder.typicode.com/posts/1";
-
-$data_array = array(
-    'userId' => 201,
-    'id' => 999,
-    'title' => 'Put Erprobung',
-    'body' => 'Put Test yigit',
-);
-
-$data = http_build_query($data_array);
-
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST,'DELETE');
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $resp = curl_exec($ch);
