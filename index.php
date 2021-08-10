@@ -51,11 +51,7 @@ if($e = curl_error($ch)){
 }
 else {
     $decoded = json_decode($resp);
-    foreach ($decoded as $key => $jsons) { // This will search in the 2 jsons
-        foreach($jsons as $key => $value) {
-            echo $key["userId"]."<br>"; // This will show jsut the value f each key like "var1" will print 9
-            // And then goes print 16,16,8 ...
-        }
-    }}
+    print_r($decoded);
+}
 
 ?>
