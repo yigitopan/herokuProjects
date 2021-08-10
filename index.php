@@ -50,16 +50,8 @@ if($e = curl_error($ch)){
     echo $e;
 }
 else {
-    try {
-        $decoded = json_decode($resp);
-        foreach ($decoded as $key => $val){
-            echo $key . ': '. $val . '<br>';
-        }
-    }
-    catch (Exception $e) {
-        echo 'Yakaldanan: ',  $e->getMessage(), "\n";
-    }
-
+    $decoded = json_decode($resp);
+    print_r($decoded);
 }
 
 ?>
