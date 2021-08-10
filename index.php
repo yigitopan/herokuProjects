@@ -50,8 +50,10 @@ if($e = curl_error($ch)){
     echo $e;
 }
 else {
-    $decoded = json_decode($resp);
-    var_dump($decoded);
+    $decoded = json_decode($resp,true);
+    foreach ($decoded as $key => $val){
+        echo $key . ': '. $val . '<br>';
+    }
 }
 
 ?>
