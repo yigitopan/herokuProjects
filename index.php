@@ -51,7 +51,9 @@ if($e = curl_error($ch)){
 }
 else {
     $decoded = json_decode($resp);
-    print_r($decoded[5]);
+    foreach ($decoded as $key => $val){
+        echo $key . ': '. $val . '<br>';
+    }
 }
 
 ?>
