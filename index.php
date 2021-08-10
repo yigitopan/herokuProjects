@@ -51,7 +51,7 @@ if($e = curl_error($ch)){
 }
 else {
     $decoded = json_decode($resp);
-    print_r($decoded);
+    print_r($decoded[5]);
 }
 
 ?>
