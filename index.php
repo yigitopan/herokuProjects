@@ -1,7 +1,7 @@
 <?php
-/*
-                *** POST BASLANGIC
- *
+
+                //*** POST BASLANGIC
+
 $url = "https://jsonplaceholder.typicode.com/posts";
 
 $data_array = array(
@@ -32,6 +32,6 @@ else {
     }
 }
 
-                    *** POST BITIS */
+
 
 ?>
