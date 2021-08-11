@@ -1,6 +1,6 @@
 <?php
 
-/*               //*** POST BASLANGIC
+
 
 $url = "https://jsonplaceholder.typicode.com/posts";
 
@@ -32,7 +32,7 @@ else {
    }
 }
 
-               POST BITISSS*/
+
 //------------------------------------------------------------------------------------------------------------------
                     /* GET START
 
@@ -89,6 +89,7 @@ else {
 
 //----------------------------------------------------------------------------------
 
+                    /* DELETE START
 $url = "https://jsonplaceholder.typicode.com/posts/1";
 $ch = curl_init();
 
@@ -99,4 +100,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $resp = curl_exec($ch);
 
 echo $resp;
+*/
+                      
 ?>
