@@ -1,6 +1,6 @@
 <?php
 
-
+/*               //*** POST BASLANGIC
 
 $url = "https://jsonplaceholder.typicode.com/posts";
 
@@ -32,9 +32,9 @@ else {
    }
 }
 
-
+               POST BITISSS*/
 //------------------------------------------------------------------------------------------------------------------
-                    /* GET START
+
 
 $ch = curl_init();
 
@@ -52,7 +52,7 @@ else {
     $decoded = json_decode($resp);
     print_r($decoded);
 }
-                        GET BITIS */
+
 //-------------------------------------------------------------------------------
 
                         /* PUT START
