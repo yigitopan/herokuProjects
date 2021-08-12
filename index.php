@@ -38,7 +38,7 @@ else {
 
 $ch = curl_init();
 
-$url = "https://jsonplaceholder.typicode.com/posts";
+$url = "https://jsonplaceholder.typicode.com/posts/1";
 
 curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
@@ -50,6 +50,8 @@ if($e = curl_error($ch)){
 }
 else {
     $decoded = json_decode($resp);
+    print_r($decoded['title']);
+    echo "<br>";
     print_r($decoded);
 }
            
