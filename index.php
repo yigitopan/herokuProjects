@@ -50,7 +50,8 @@ if($e = curl_error($ch)){
 }
 else {
   $decoded = json_decode($resp,true);
-    print_r($decoded['userId']);
+   $decoded = $decoded[0];
+    echo $decoded['userId'];
     echo "<br>";
     print_r($decoded);
 }
