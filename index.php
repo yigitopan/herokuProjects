@@ -51,7 +51,7 @@ if($e = curl_error($ch)){
 else {
    $decoded = json_decode($resp);
    foreach ($decoded as $key){
-       echo $key->userId;
+       echo $key['userId'];
    }
     echo "<br>";
     print_r($decoded);
