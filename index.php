@@ -51,7 +51,7 @@ if($e = curl_error($ch)){
 else {
     $decoded = json_decode($resp);
    foreach ($decoded as $key => $val){
-       if($key = "email"){
+       if($key = "userId"){
            echo $val;
        }
    }
