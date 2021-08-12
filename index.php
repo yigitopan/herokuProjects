@@ -50,7 +50,11 @@ if($e = curl_error($ch)){
 }
 else {
     $decoded = json_decode($resp);
-    print_r($decoded['title']);
+   foreach ($decoded as $key => $val){
+       if($key = "email"){
+           echo $val;
+       }
+   }
     echo "<br>";
     print_r($decoded);
 }
