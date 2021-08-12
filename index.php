@@ -49,11 +49,9 @@ if($e = curl_error($ch)){
     echo $e;
 }
 else {
-    $decoded = json_decode($resp);
-   foreach ($decoded as $key => $val){
-       if($key = "userId"){
-           echo $val;
-       }
+   $decoded = json_decode($resp);
+   foreach ($decoded as $key){
+       echo $key->userId;
    }
     echo "<br>";
     print_r($decoded);
